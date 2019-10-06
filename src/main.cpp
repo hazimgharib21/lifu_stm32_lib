@@ -1,15 +1,14 @@
 #include <Arduino.h>
+#include <kt_gpio.h>
 
-void setup() {
+Pin<IO::PA0> led;
 
-  pinMode(PC13, OUTPUT);
-
+void setup()
+{
+  led.output();
 }
 
-void loop() {
+void loop()
+{
 
-  digitalWrite(PC13, HIGH);
-  delay(1000);
-  digitalWrite(PC13, LOW);
-  delay(1000);
 }
